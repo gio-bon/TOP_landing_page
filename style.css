@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin:0%;
+    font-family: 'Roboto', sans-serif;;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
+    background-color: rgb(34, 48, 66);
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .logo-right ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
+
+.logo p{
+    font-weight: bolder;
+    font-size: 22px;
+} 
 
 .header{
     display: flex;
@@ -24,20 +37,66 @@ body{
     justify-content: center;
     background-color: rgb(34, 48, 66);
     flex-grow: 1;
+    padding:10px;
+}
+
+.header-left{
+    width: 600px;
+    color: white;
+    width: 500px;
+    margin: 40px;
+}
+
+.header button{
+    background-color: rgb(89, 122, 231);
+    border:none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.img-form-main{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 40px;
 }
 
 .info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     flex-grow: 1;
+    padding: 30px;
 }
 
 .images{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.images div{
+    width: 150px;
+}
+
+.images img{
+    width: 140px;
+}
+
+.img-form{
+    height: 120px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.info p{
+    font-size: 12px;
+    width: 120px;
+    text-align: center;
 }
 
 .quote{
@@ -47,6 +106,13 @@ body{
     flex-direction: column;
     background-color: rgb(221, 221, 221);
     flex-grow: 1;
+    padding: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.quote p{
+    width: 500px;
 }
 
 .sign{
@@ -55,16 +121,51 @@ body{
     justify-content: center;
     flex-direction: column;
     flex-grow: 1;
+    padding: 50px;
 }
 
 .banner{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(89, 122, 231);
+    width: 700px;
+    border-radius: 7px;
+    padding: 10px;
+    gap: 20px;
+    color: white;
+}
+
+.sign-left p{
+    font-size: 12px;
 }
 
 .footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(34, 48, 66);
+    color: white;
+    font-size:14px;
 }
+
+.banner button{
+    background-color: rgb(89, 122, 231);
+    border-color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: white;
+    margin-left: 80px;
+}
+
+/* remove enfeites de links */
+
+ul li a:link{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+  }
+  
+  ul li{
+    list-style-type: none;
+  }
+
